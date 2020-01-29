@@ -4,6 +4,10 @@ import model.Package;
 import java.util.Arrays;
 
 class Service {
+    /**
+     * Checks that packet fits within box. Any packet rotation allowed
+     * @return true if packet fits within box
+     */
     boolean isPackageFitInBox(Package packet, Box box) {
         double[] packetEdges = packet.edges();
         double[] boxEdges = box.edges();
